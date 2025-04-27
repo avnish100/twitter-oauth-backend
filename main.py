@@ -24,10 +24,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-X_CLIENT_ID = os.getenv("X_CLIENT_ID", "X1Boc0c3SW5lclhIZVpOTXY4TEw6MTpjaQ")
-X_CLIENT_SECRET = os.getenv("X_CLIENT_SECRET", "MBMsBOkx1IFO6Ky5ycvFiy8YqP1WWPxHAWcCiGCRoppLwlrGmZ")
-REDIRECT_URI = os.getenv("REDIRECT_URI", "http://localhost:8000/api/auth/x/callback")
-FRONTEND_URL = os.getenv("FRONTEND_URL", "http://localhost:3000")
+X_CLIENT_ID = os.getenv("X_CLIENT_ID")
+X_CLIENT_SECRET = os.getenv("X_CLIENT_SECRET")
+REDIRECT_URI = os.getenv("REDIRECT_URI")
+FRONTEND_URL = os.getenv("FRONTEND_URL")
 
 # Session management
 class SessionData(BaseModel):
